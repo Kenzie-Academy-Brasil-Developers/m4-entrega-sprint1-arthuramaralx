@@ -84,7 +84,6 @@ describe("Testando rota GET /users", () => {
 
   it("Testando listagem de usuários sem token", async () => {
     const response = await request(app).get("/users");
-
     expect(response.status).toBe(401);
     expect(response.body).toHaveProperty(
       "message",

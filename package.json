@@ -2,7 +2,10 @@
   "name": "m4-entrega-sprint1-pedrocostakenzie",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/Kenzie-Academy-Brasil-Developers/m4-entrega-sprint1-pedrocostakenzie.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kenzie-Academy-Brasil-Developers/m4-entrega-sprint1-pedrocostakenzie.git"
+  },
   "author": "Pedro Costa <phmc99@outlook.com>",
   "license": "MIT",
   "scripts": {
@@ -10,11 +13,22 @@
     "start": "node src/app.js",
     "dev": "npx nodemon src/app.js"
   },
-  "dependencies": {
-  },
   "devDependencies": {
     "@babel/plugin-transform-modules-commonjs": "^7.18.0",
     "jest": "^28.1.0",
+    "sucrase": "^3.21.0",
     "supertest": "^6.2.3"
+  },
+  "description": "Para inciar este projeto, é necessário instalar as dependências, que serão utilizadas nos testes. Portanto utilize o comando abaixo para instalar tais dependências:",
+  "bugs": {
+    "url": "https://github.com/Kenzie-Academy-Brasil-Developers/m4-entrega-sprint1-pedrocostakenzie/issues"
+  },
+  "homepage": "https://github.com/Kenzie-Academy-Brasil-Developers/m4-entrega-sprint1-pedrocostakenzie#readme",
+  "keywords": [],
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.18.1",
+    "jsonwebtoken": "^8.5.1",
+    "uuid": "^8.3.2"
   }
 }
